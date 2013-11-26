@@ -1,4 +1,4 @@
-package cam.baqr.baqrcam.ui;
+package com.baqr.baqrcam.ui;
 
 import com.baqr.baqr.R;
 

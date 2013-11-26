@@ -1,4 +1,4 @@
-package cam.baqr.baqrcam.ui;
+package com.baqr.baqrcam.ui;
 
 import static com.baqr.http.TinyHttpServer.KEY_HTTPS_ENABLED;
 import static com.baqr.http.TinyHttpServer.KEY_HTTPS_PORT;

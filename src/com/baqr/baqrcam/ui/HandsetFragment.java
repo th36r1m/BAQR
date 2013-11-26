@@ -1,4 +1,4 @@
-package cam.baqr.baqrcam.ui;
+package com.baqr.baqrcam.ui;
 
 import java.util.Locale;
 
