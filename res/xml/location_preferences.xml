@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<CheckBoxPreference 
+		android:title="Base Station Mode" 
+      	android:key="isBaseStation" 
+      	android:summary="Required if used with the COPTIC base station" />
+      
+	<PreferenceCategory 
+    	android:title="General Settings">
+        <EditTextPreference 
+            android:key="secretCode" 
+            android:title="Secret Code" 
+            android:summary="Secret Code Summary" 
+            android:defaultValue="1234"/>
+    	<EditTextPreference 
+    	    android:title="Mobile ID" 
+    	    android:key="tagID" 
+    	    android:summary="TagID Summary" 
+    	    android:defaultValue="8775550000"/>
+        <EditTextPreference 
+            android:title="Lock Code" 
+            android:key="lockCode" 
+            android:summary="Lock Code Summary" 
+            android:defaultValue="12345"/>
+	</PreferenceCategory>
+	
+	<PreferenceCategory 
+	    android:title="Multicast Settings">
+        <EditTextPreference 
+            android:key="ipAddrOne" 
+            android:summary="IP address to listen/send multicast data" 
+            android:title="Multicast Address" 
+            android:defaultValue="224.10.10.1"/>
+        <EditTextPreference 
+            android:key="multiPort" 
+            android:summary="The port number associated with the multicast address" 
+            android:title="Multicast Port" 
+            android:defaultValue="17012"/>
+    </PreferenceCategory>
+    
+	<PreferenceCategory 
+        android:title="Streaming Video Settings">
+        <CheckBoxPreference 
+            android:title="Enable Streaming Audio/Video" 
+            android:key="streamingEnabled" 
+            android:summary="If enabled, other devices can control this device"/>
+        <EditTextPreference 
+            android:title="Server IP Address (Stream to)" 
+            android:summary="IP address of the server this device will stream video to"
+            android:key="streamIPTo"/>
+        <EditTextPreference 
+            android:title="Port" 
+            android:summary="Port used for streaming audio/video" 
+            android:key="streamPortTo"/>
+        <EditTextPreference 
+            android:title="Server IP Address (Stream from)" 
+            android:summary="IP address of the server this device will stream video from"
+            android:key="streamIPFrom"/>
+        <EditTextPreference 
+            android:title="Port" 
+            android:summary="Port used for streaming audio/video" 
+            android:key="streamPortFrom"/>
+    </PreferenceCategory>
+	
+</PreferenceScreen>
